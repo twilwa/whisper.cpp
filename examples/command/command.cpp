@@ -20,6 +20,7 @@
 #include <thread>
 #include <vector>
 #include <map>
+#include <cpr/cpr.h>
 
 // command-line parameters
 struct whisper_params {
@@ -286,21 +287,22 @@ int process_command_list(struct whisper_context * ctx, audio_async &audio, const
     std::vector<float> pcmf32_prompt;
 
     // main loop
-    while (is_running) {
-        // handle Ctrl + C
-        is_running = sdl_poll_events();
+while (is_running) {
+    // handle Ctrl + C
+    is_running = sdl_poll_events();
 
-        // delay
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+    // delay
+    std::this_thread::sleep_for(std::chrono::milliseconds(100));
 
-        audio.get(2000, pcmf32_cur);
+    audio.get(2000, pcmf32_cur);
 
-        if (::vad_simple(pcmf32_cur, WHISPER_SAMPLE_RATE, 1000, params.vad_thold, params.freq_thold, params.print_energy)) {
-            fprintf(stdout, "%s: Speech detected! Processing ...\n", __func__);
+    if (::vad_simple(pcmf32_cur, WHISPER_SAMPLE_RATE, 1000, params.vad_thold, params.freq_thold, params.print_energy)) {
+        fprintf(stdout, "%s: Speech detected! Processing ...\n", __func__);
 
-            const auto t_start = std::chrono::high_resolution_clock::now();
+        const auto t_start = std::chrono::high_resolution_clock::now();
 
-            whisper_full_params wparams = whisper_full_default_params(WHISPER_SAMPLING_GREEDY);
+        whisper_full_params wparams = whisper_full_default_params(WHISPER_SAMPLING_GREEDY);
+
 
             wparams.print_progress   = false;
             wparams.print_special    = params.print_special;
@@ -388,22 +390,30 @@ int process_command_list(struct whisper_context * ctx, audio_async &audio, const
                 }
 
                 // best command
-                {
-                    const auto t_end = std::chrono::high_resolution_clock::now();
+                    {
+                const auto t_end = std::chrono::high_resolution_clock::now();
 
-                    const float prob = probs_id[0].first;
-                    const int index = probs_id[0].second;
+                const float prob = probs_id[0].first;
+                const int index = probs_id[0].second;
 
-                    fprintf(stdout, "\n");
-                    fprintf(stdout, "%s: detected command: %s%s%s | p = %f | t = %d ms\n", __func__,
-                            "\033[1m", allowed_commands[index].c_str(), "\033[0m", prob,
-                            (int) std::chrono::duration_cast<std::chrono::milliseconds>(t_end - t_start).count());
-                    fprintf(stdout, "\n");
+                fprintf(stdout, "\n");
+                fprintf(stdout, "%s: detected command: %s%s%s | p = %f | t = %d ms\n", __func__,
+                        "\033[1m", allowed_commands[index].c_str(), "\033[0m", prob,
+                        (int) std::chrono::duration_cast<std::chrono::milliseconds>(t_end - t_start).count());
+                fprintf(stdout, "\n");
+
+                // If the detected command is your command, call your script
+                if (allowed_commands[index] == "search obsidian") {
+                    int return_code = system("python3 obsidian.py");
+                    if (return_code != 0) {
+                        fprintf(stderr, "%s: ERROR: Failed to execute script\n", __func__);
+                    }
                 }
             }
 
             audio.clear();
         }
+    }
     }
 
     return 0;

@@ -1,0 +1,1 @@
+/usr/bin/c++              -Wall                                       -Wextra                                     -Wpedantic                                  -Wcast-qual                              -O3 -DNDEBUG -rdynamic CMakeFiles/quantize.dir/quantize.cpp.o -o ../../bin/quantize  -Wl,-rpath,/mnt/d/repos/whisper.cpp ../libcommon.a ../../libwhisper.so -ldl 

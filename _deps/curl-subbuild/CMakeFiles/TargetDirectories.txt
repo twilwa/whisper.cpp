@@ -1,0 +1,3 @@
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/CMakeFiles/curl-populate.dir
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/CMakeFiles/edit_cache.dir
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/CMakeFiles/rebuild_cache.dir
