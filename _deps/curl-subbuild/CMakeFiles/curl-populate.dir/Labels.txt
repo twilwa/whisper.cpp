@@ -1,0 +1,14 @@
+# Target labels
+ curl-populate
+# Source files and their labels
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/CMakeFiles/curl-populate
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/CMakeFiles/curl-populate.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/CMakeFiles/curl-populate-complete.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test.rule
+/mnt/d/repos/whisper.cpp/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update.rule

@@ -1,0 +1,14 @@
+# Target labels
+ cpr-populate
+# Source files and their labels
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/CMakeFiles/cpr-populate
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/CMakeFiles/cpr-populate.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/CMakeFiles/cpr-populate-complete.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-build.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-configure.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-download.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-install.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-mkdir.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-patch.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-test.rule
+/mnt/d/repos/whisper.cpp/_deps/cpr-subbuild/cpr-populate-prefix/src/cpr-populate-stamp/cpr-populate-update.rule
