@@ -1,0 +1,3 @@
+/mnt/d/repos/whisper.cpp/examples/command/_deps/cpr-subbuild/CMakeFiles/cpr-populate.dir
+/mnt/d/repos/whisper.cpp/examples/command/_deps/cpr-subbuild/CMakeFiles/edit_cache.dir
+/mnt/d/repos/whisper.cpp/examples/command/_deps/cpr-subbuild/CMakeFiles/rebuild_cache.dir

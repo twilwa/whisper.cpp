@@ -16901,3 +16901,127 @@ events:
       stderr: |
       exitCode: 0
 ...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "_deps/zlib-src/cmake/detect-arch.cmake:24 (try_run)"
+      - "_deps/zlib-src/CMakeLists.txt:49 (include)"
+    directories:
+      source: "/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp"
+      binary: "/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "             -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/d/repos/whisper.cpp/_deps/cpr-src/cmake;/mnt/d/repos/whisper.cpp/cmake/"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/anon/.tea/cmake.org/v3.27.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_d27e7/fast
+        /usr/bin/gmake  -f CMakeFiles/cmTC_d27e7.dir/build.make CMakeFiles/cmTC_d27e7.dir/build
+        gmake[1]: Entering directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_d27e7.dir/detect-arch.c.o
+        /usr/bin/cc   -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c  -std=c99 -o CMakeFiles/cmTC_d27e7.dir/detect-arch.c.o -c /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c
+        /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c:8:6: error: #error archfound x86_64
+            8 |     #error archfound x86_64
+              |      ^~~~~
+        /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c:108: warning: ISO C forbids an empty translation unit [-Wpedantic]
+        gmake[1]: *** [CMakeFiles/cmTC_d27e7.dir/build.make:78: CMakeFiles/cmTC_d27e7.dir/detect-arch.c.o] Error 1
+        gmake[1]: Leaving directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        gmake: *** [Makefile:127: cmTC_d27e7/fast] Error 2
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "_deps/zlib-src/cmake/detect-arch.cmake:24 (try_run)"
+      - "_deps/zlib-src/CMakeLists.txt:49 (include)"
+    directories:
+      source: "/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp"
+      binary: "/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "             -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/d/repos/whisper.cpp/_deps/cpr-src/cmake;/mnt/d/repos/whisper.cpp/cmake/"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/anon/.tea/cmake.org/v3.27.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_79a14/fast
+        gmake[1]: Entering directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_79a14.dir/build.make CMakeFiles/cmTC_79a14.dir/build
+        gmake[2]: Entering directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_79a14.dir/detect-arch.c.o
+        /usr/bin/cc   -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c  -std=c99 -o CMakeFiles/cmTC_79a14.dir/detect-arch.c.o -c /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c
+        /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c:8:6: error: #error archfound x86_64
+            8 |     #error archfound x86_64
+              |      ^~~~~
+        /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c:108: warning: ISO C forbids an empty translation unit [-Wpedantic]
+        gmake[2]: *** [CMakeFiles/cmTC_79a14.dir/build.make:78: CMakeFiles/cmTC_79a14.dir/detect-arch.c.o] Error 1
+        gmake[2]: Leaving directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        gmake[1]: *** [Makefile:127: cmTC_79a14/fast] Error 2
+        gmake[1]: Leaving directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...
+
+---
+events:
+  -
+    kind: "try_run-v1"
+    backtrace:
+      - "_deps/zlib-src/cmake/detect-arch.cmake:24 (try_run)"
+      - "_deps/zlib-src/CMakeLists.txt:49 (include)"
+    directories:
+      source: "/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp"
+      binary: "/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "             -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c"
+      CMAKE_C_FLAGS_DEBUG: "-g"
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "/mnt/d/repos/whisper.cpp/_deps/cpr-src/cmake;/mnt/d/repos/whisper.cpp/cmake/"
+    buildResult:
+      variable: "compile_result_unused"
+      cached: true
+      stdout: |
+        Change Dir: '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        
+        Run Build Command(s): /home/anon/.tea/cmake.org/v3.27.3/bin/cmake -E env VERBOSE=1 /usr/bin/gmake -f Makefile cmTC_404aa/fast
+        gmake[1]: Entering directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        /usr/bin/gmake  -f CMakeFiles/cmTC_404aa.dir/build.make CMakeFiles/cmTC_404aa.dir/build
+        gmake[2]: Entering directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        Building C object CMakeFiles/cmTC_404aa.dir/detect-arch.c.o
+        /usr/bin/cc   -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c  -std=c99 -o CMakeFiles/cmTC_404aa.dir/detect-arch.c.o -c /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c
+        /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c:8:6: error: #error archfound x86_64
+            8 |     #error archfound x86_64
+              |      ^~~~~
+        /mnt/d/repos/whisper.cpp/_deps/zlib-src/cmake/detect-arch.c:108: warning: ISO C forbids an empty translation unit [-Wpedantic]
+        gmake[2]: *** [CMakeFiles/cmTC_404aa.dir/build.make:78: CMakeFiles/cmTC_404aa.dir/detect-arch.c.o] Error 1
+        gmake[2]: Leaving directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        gmake[1]: *** [Makefile:127: cmTC_404aa/fast] Error 2
+        gmake[1]: Leaving directory '/mnt/d/repos/whisper.cpp/_deps/zlib-build/CMakeFiles/CMakeTmp'
+        
+      exitCode: 2
+    runResult:
+      variable: "run_result_unused"
+      cached: true
+...

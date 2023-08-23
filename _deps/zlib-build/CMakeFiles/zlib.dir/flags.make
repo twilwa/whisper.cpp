@@ -6,7 +6,7 @@ C_DEFINES = -DCPR_ENABLE_CURL_HTTP_ONLY -DCPR_ENABLE_SSL -DHAVE_BUILTIN_CTZ -DHA
 
 C_INCLUDES = -I/mnt/d/repos/whisper.cpp/examples -I/mnt/d/repos/whisper.cpp/_deps/zlib-build -I/mnt/d/repos/whisper.cpp/_deps/zlib-src
 
-C_FLAGS =              -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -Wall -Wno-implicit-fallthrough -O2 -DNDEBUG -std=c99 -fPIC -fno-semantic-interposition
+C_FLAGS =              -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c -Wall -Wno-implicit-fallthrough -O2 -DNDEBUG -std=c99 -fPIC -fno-semantic-interposition
 
 # Custom flags: _deps/zlib-build/CMakeFiles/zlib.dir/arch/x86/slide_avx.c.o_FLAGS = -mavx2 -fno-lto
 

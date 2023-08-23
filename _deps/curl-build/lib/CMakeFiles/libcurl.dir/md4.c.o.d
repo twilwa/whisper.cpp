@@ -118,11 +118,6 @@ _deps/curl-build/lib/CMakeFiles/libcurl.dir/md4.c.o: \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/curl_ctype.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/curl_md4.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/warnless.h \
- /home/anon/.tea/openssl.org/v1.1.1v/include/openssl/opensslconf.h \
- /home/anon/.tea/openssl.org/v1.1.1v/include/openssl/opensslv.h \
- /home/anon/.tea/openssl.org/v1.1.1v/include/openssl/md4.h \
- /home/anon/.tea/openssl.org/v1.1.1v/include/openssl/e_os2.h \
- /usr/include/inttypes.h \
- /usr/lib/gcc/x86_64-linux-gnu/11/include/stdint.h /usr/include/stdint.h \
- /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+ /usr/include/x86_64-linux-gnu/openssl/opensslconf.h \
+ /usr/include/x86_64-linux-gnu/openssl/configuration.h \
+ /usr/include/openssl/macros.h /usr/include/openssl/opensslv.h

@@ -174,5 +174,4 @@ _deps/curl-build/lib/CMakeFiles/libcurl.dir/version.c.o: \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/http2.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/curl_printf.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/include/curl/mprintf.h \
- /home/anon/.tea/zlib.net/v1.3.0/include/zlib.h \
- /home/anon/.tea/zlib.net/v1.3.0/include/zconf.h
+ /usr/include/zlib.h /usr/include/zconf.h

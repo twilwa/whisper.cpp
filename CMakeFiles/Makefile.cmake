@@ -80,7 +80,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "_deps/cpr-src/include/CMakeLists.txt"
   "_deps/curl-build/lib/Makefile.inc.cmake"
   "_deps/curl-src/CMake/CurlSymbolHiding.cmake"
-  "_deps/curl-src/CMake/CurlTests.c"
   "_deps/curl-src/CMake/FindLibSSH2.cmake"
   "_deps/curl-src/CMake/Macros.cmake"
   "_deps/curl-src/CMake/OtherTests.cmake"

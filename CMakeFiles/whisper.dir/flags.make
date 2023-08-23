@@ -7,7 +7,7 @@ C_DEFINES = -DGGML_BUILD -DGGML_SHARED -DWHISPER_BUILD -DWHISPER_SHARED -Dwhispe
 
 C_INCLUDES = -I/mnt/d/repos/whisper.cpp/.
 
-C_FLAGS =              -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -O3 -DNDEBUG -fPIC
+C_FLAGS =              -Wall                                       -Wextra                                     -Wpedantic                                  -Wshadow                                    -Wcast-qual                                 -Wstrict-prototypes                         -Wpointer-arith                             -Wno-unused-function                     -Werror=vla -mavx -mavx2 -mfma -mf16c -O3 -DNDEBUG -fPIC
 
 CXX_DEFINES = -DGGML_BUILD -DGGML_SHARED -DWHISPER_BUILD -DWHISPER_SHARED -Dwhisper_EXPORTS
 

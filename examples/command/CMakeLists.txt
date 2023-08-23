@@ -1,3 +1,4 @@
+cmake_minimum_required(VERSION 3.27)
 include(FetchContent)
 
 FetchContent_Declare(cpr GIT_REPOSITORY https://github.com/libcpr/cpr.git
@@ -9,7 +10,8 @@ if (WHISPER_SDL2)
     set(TARGET command)
     add_executable(${TARGET} command.cpp)
 
-    include(DefaultTargetOptions)
+    include(/mnt/d/repos/whisper.cpp/cmake/DefaultTargetOptions.cmake)
 
     target_link_libraries(${TARGET} PRIVATE common common-sdl whisper ${CMAKE_THREAD_LIBS_INIT} cpr::cpr)
 endif ()
+

@@ -158,8 +158,7 @@ _deps/curl-build/lib/CMakeFiles/libcurl.dir/content_encoding.c.o: \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/socketpair.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/quic.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/c-hyper.h \
- /home/anon/.tea/zlib.net/v1.3.0/include/zlib.h \
- /home/anon/.tea/zlib.net/v1.3.0/include/zconf.h \
+ /usr/include/zlib.h /usr/include/zconf.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/sendf.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/content_encoding.h \
  /mnt/d/repos/whisper.cpp/_deps/curl-src/lib/strdup.h \
