@@ -292,7 +292,7 @@ typedef double ggml_float;
 #if defined(_MSC_VER) || defined(__MINGW32__)
 #include <intrin.h>
 #else
-#if defined(__AVX__) || defined(__AVX2__) || defined(__AVX512F__) || defined(__SSSE3__)
+#if defined(__AVX__) || defined(__AVX2__) || defined(__AVX512F__) || defined(__SSSE3__) || defined(__SSE3__)
 #include <immintrin.h>
 #endif
 #endif
@@ -18715,6 +18715,14 @@ int ggml_cpu_has_gpublas(void) {
 
 int ggml_cpu_has_sse3(void) {
 #if defined(__SSE3__)
+    return 1;
+#else
+    return 0;
+#endif
+}
+
+int ggml_cpu_has_ssse3(void) {
+#if defined(__SSSE3__)
     return 1;
 #else
     return 0;
